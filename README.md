@@ -1,0 +1,1 @@
+To create an interactive navigation menu with the desired functionality, I'll use HTML for the structure, CSS for styling, and JavaScript for adding interactivity. The navigation menu will be fixed at the top of the page and will change its background color when the user scrolls down. Additionally, we'll change the color of individual menu items when hovered over.
