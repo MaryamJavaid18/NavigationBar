@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Navigation Menu</title>
+    <style>
+     
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 60px; /
+}
+
+.section {
+    padding: 50px;
+    height: 100vh; 
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e0490;
+
+
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, font-family 0.3s ease; /* Add transition for font-family change */
+}
+
+
+#navbar ul li a:hover {
+    color: #00fbff;
+    font-family: 'Courier New',' Brush Script MT', 'monospace'; /* Change font on hover */
+}
+
+.scrolled {
+    background-color: #222;
+}
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#new arrivals">New Arrivals</a></li>
+            <li><a href="#woman">Woman</a></li>
+            <li><a href="#man">Men</a></li>
+            <li><a href="#kids">Kids</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Sections -->
+    <div id="new arrivals" class="section">
+        <h3> Women
+            <ul>
+                <li>Ready To Wear</li>
+                <li> Unstitched</li>
+            </ul> 
+        </h3>
+    </div>
+    <div id="woman" class="section"><h3>Woman's Collection</h3></div>
+    <div id="man" class="section"><h3>Men's Collection</h3></div>
+    <div id="kids" class="section"><h3> Kids Collection</h3></div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
